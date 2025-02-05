@@ -1,0 +1,119 @@
+.attribution { font-size: 11px; text-align: center; margin-top: 20px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,img{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1440px;
+    background-color: #F3EAE3;
+    overflow: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    /* margin: 0px auto; */
+    width: 50%;
+    /* height: 500px; */
+    background-color: white;
+    border-radius: 10px;
+}
+.card-img{
+    background-image: url("./images/image-product-desktop.jpg");
+    flex-basis: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-info{
+    flex-basis: 100%;
+    padding: 30px;
+}
+.card-info div,p,h1,.btn{
+    margin-bottom: 20px;
+}
+.card-info .product-type{
+    text-transform: uppercase;
+    color: #7A7B83;
+    font-family: "Montserrat";
+    font-size: .8em;
+    letter-spacing: 3px;
+}
+.card-info .heading{
+    font-family: "Fraunces";
+}
+.card-info .description{
+    font-family: "Montserrat";
+    color: #7A7B83;
+    line-height: 25px;
+}
+.price-info{
+    display: flex;
+    /* width: 200px; */
+    /* height: 50px; */
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.price-info *{
+    margin: 0;
+}
+.price{
+    font-family: "Montserrat";
+    color: #7A7B83;
+    font-size: .8em;
+    text-decoration: line-through;
+}
+.card-info .discount-price{
+    font-family: "Fraunces";
+    font-size: 30px;
+    font-weight: bold;
+    color: #41826A;
+    margin-right: 20px;
+}
+.card-info .btn{
+    border: 0;
+    border-radius: 10px;
+    background-color: #1A4031;
+    font-family: "Montserrat";
+    color: white;
+    font-size: .9em;
+    padding: 15px 20px;
+    width: 100%;
+    transition: .3s;
+}
+.icon{
+    margin-right: 10px;
+}
+.btn:hover{
+    background-color: #41826A;
+}
+@media only screen and (max-width: 600px) {
+    .card{
+        flex-wrap: wrap;
+        width: 345px;
+        height: auto;
+    }   
+    .card-img{
+        background-image: url("./images/image-product-mobile.jpg");
+        height: 250px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .card-info .btn{
+        margin: 0;
+    }
+}

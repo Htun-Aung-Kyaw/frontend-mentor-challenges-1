@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  
+    <title>Document</title>
+    <style>
+    .card-info{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    .card-info div,p,h1,.btn{
+        margin-bottom: 20px;
+    }
+    .card-info .product-type{
+        text-transform: uppercase;
+        color: #7A7B83;
+        font-family: "Montserrat";
+        font-size: .8em;
+        letter-spacing: 3px;
+    }
+    .card-info .heading{
+        font-family: "Fraunces";
+    }
+    .card-info .description{
+        font-family: "Montserrat";
+        color: #7A7B83;
+        line-height: 25px;
+    }
+    .price-info{
+        display: flex;
+        /* width: 200px; */
+        /* height: 50px; */
+        align-items: center;
+        /* justify-content: space-around; */
+    }
+    .price-info *{
+        margin: 0;
+    }
+    .price{
+        font-family: "Montserrat";
+        color: #7A7B83;
+        font-size: .8em;
+        text-decoration: line-through;
+    }
+    .card-info .discount-price{
+        font-family: "Fraunces";
+        font-size: 30px;
+        font-weight: bold;
+        color: #41826A;
+        margin-right: 20px;
+    }
+    .card-info .btn{
+        border: 0;
+        border-radius: 10px;
+        background-color: #1A4031;
+        font-family: "Montserrat";
+        color: white;
+        font-size: .9em;
+        padding: 15px 20px;
+        width: 100%;
+        transition: .3s;
+    }
+    .icon{
+        margin-right: 10px;
+    }
+    .btn:hover{
+        background-color: #41826A;
+    }
+    </style>
+</head>
+<body>
+    <div class="card-info">
+        <p class="product-type">Perfume</p>
+
+        <h1 class="heading">Gabrielle  Essence Eau De Parfum</h1>
+
+        <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+
+        <div class="price-info">
+            <div class="discount-price">$149.99</div>
+            <div class="price">$169.99</div>
+        </div>
+        <div class="align-center">
+          <button class="btn"><i class="icon fa-solid fa-cart-shopping"></i>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
